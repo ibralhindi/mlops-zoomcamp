@@ -1,0 +1,49 @@
+artifact_path: /workspaces/mlops-zoomcamp/02-experiment-tracking/mlruns/1/models/m-2315f94bae2743a8ab339cb6045cf6e7/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.9.23
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.core.Booster
+    model_format: xgb
+    xgb_version: 2.1.4
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: m-2315f94bae2743a8ab339cb6045cf6e7
+model_size_bytes: 8304389
+model_uuid: m-2315f94bae2743a8ab339cb6045cf6e7
+prompts: null
+run_id: 65496008f4dd44dd83dd97f5162a8b50
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "VendorID", "required": true}, {"type": "datetime",
+    "name": "lpep_pickup_datetime", "required": true}, {"type": "datetime", "name":
+    "lpep_dropoff_datetime", "required": true}, {"type": "string", "name": "store_and_fwd_flag",
+    "required": false}, {"type": "double", "name": "RatecodeID", "required": false},
+    {"type": "string", "name": "PULocationID", "required": true}, {"type": "string",
+    "name": "DOLocationID", "required": true}, {"type": "double", "name": "passenger_count",
+    "required": false}, {"type": "double", "name": "trip_distance", "required": true},
+    {"type": "double", "name": "fare_amount", "required": true}, {"type": "double",
+    "name": "extra", "required": true}, {"type": "double", "name": "mta_tax", "required":
+    true}, {"type": "double", "name": "tip_amount", "required": true}, {"type": "double",
+    "name": "tolls_amount", "required": true}, {"type": "any", "name": "ehail_fee",
+    "required": false}, {"type": "double", "name": "improvement_surcharge", "required":
+    true}, {"type": "double", "name": "total_amount", "required": true}, {"type":
+    "double", "name": "payment_type", "required": false}, {"type": "double", "name":
+    "trip_type", "required": false}, {"type": "double", "name": "congestion_surcharge",
+    "required": false}, {"type": "double", "name": "duration", "required": true},
+    {"type": "string", "name": "PU_DO", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-07-19 15:11:57.455581'
